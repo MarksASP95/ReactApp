@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'myFont';
+}
+
+@font-face{
+  font-family: myFont;
+  src: url('helv.otf') format('truetype');
+  font-weight: bold;
+}
+
+#left{
+  float:left;
+  width: 75%;
+}
+
+#calculator{
+  width: 324px;
+  height: 540px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+pre{
+  font-family: 'Consolas';
+}
+
+button{
+  border: 1px grey solid;
+  font-size: 2.2em;
+}
+
+button:active{
+  background-color: rgb(138, 138, 138, .5);
+}
+
+#display{
+  height: 25%;
+  background-color: black;
+  color: white;
+  text-align: right;
+  
+}
+
+#display p{
+  margin-right: 20px;
+}
+
+#specialButtons{
+  height: 81px;
+  width: 100%;
+}
+
+#inputs{
+  height: 324px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input{
+  height: 81px;
+  width: 81px;
+  
+}
+
+#zero{
+  height: 81px;
+  width: 162px;
+}
+
+.special{
+  width: 81px;
+  height: 81px;
+  float:left;
+  background-color: rgba(109, 109, 109, 0.329)
+}
+
+#operators{
+  float:right;
+  width: 81px;
+  height: 405px;
+}
+
+.operator{
+  height: 81px;
+  width: 81px;
+  float: left;
+  margin-left: -1px;
+  background-color: rgb(265,149,0);
+  color:white;
+}
